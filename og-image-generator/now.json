@@ -1,0 +1,14 @@
+{
+  "public": false,
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.ts",
+      "use": "@now/node",
+      "config": { "maxLambdaSize": "36mb" }
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.+)", "destination": "/api" }
+  ]
+}
