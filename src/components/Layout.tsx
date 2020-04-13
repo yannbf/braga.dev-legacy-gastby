@@ -143,10 +143,6 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    div#disqus_thread {
-        background: rgba(0,0,0,0.5);
-        padding: 15px;
-    }
 `;
 
 const Main = styled.main`

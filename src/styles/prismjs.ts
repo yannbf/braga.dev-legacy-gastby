@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 
+import { media } from './common';
+
 export const prismjsStyles = css`
   code[class*='language-'],
   pre[class*='language-'] {
@@ -21,6 +23,10 @@ export const prismjsStyles = css`
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
+
+    ${media.small`
+      font-size: 1.2rem;
+    `}
   }
 
   /* Code blocks */
