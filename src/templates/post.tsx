@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React, { useEffect, useRef } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import styled, { css } from 'styled-components';
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
