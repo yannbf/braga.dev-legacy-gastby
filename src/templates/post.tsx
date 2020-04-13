@@ -154,9 +154,10 @@ const CategoryList: React.FC<{ list: GatsbyTypes.MdxFrontmatter['categories'] }>
 interface PostProps {
   data: GatsbyTypes.PostQuery;
   pageContext: PageContext;
+  location: Location;
 }
 
-const Post: React.FC<PostProps> = ({ data: { mdx }, pageContext: { next, prev } }) => {
+const Post: React.FC<PostProps> = ({ data: { mdx }, pageContext: { next, prev }, location }) => {
   const frontmatter = mdx?.frontmatter;
   const body = mdx?.body;
   if (!frontmatter || !body) {
@@ -165,7 +166,6 @@ const Post: React.FC<PostProps> = ({ data: { mdx }, pageContext: { next, prev } 
   const editLink = mdx?.fields?.editLink;
 
   const progressBar = useRef<HTMLDivElement>(null);
-
   const disqusConfig = {
     url: `${constants.site.url}/${location.pathname}`,
     identifier: mdx?.id,
