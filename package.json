@@ -75,6 +75,7 @@
     },
     "scripts": {
         "start": "yarn dev",
+        "postinstall": "cd plugins/gatsby-plugin-feed-custom && yarn install",
         "dev": "gatsby develop",
         "build": "gatsby build",
         "serve": "gatsby serve",
