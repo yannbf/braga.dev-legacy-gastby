@@ -100,6 +100,7 @@ const ModifiedThemeSwitch = styled(ThemeSwitch)`
 const NAVIGATION = [
   { to: '/blog/', label: 'blog' },
   { to: '/projects/', label: 'projects' },
+  { to: '/about/', label: 'about' },
 ];
 
 const MenuTitleComponent = ({ location, children }: { location: WindowLocation; children: React.ReactNode }) => {
