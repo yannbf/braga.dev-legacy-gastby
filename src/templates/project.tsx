@@ -142,7 +142,7 @@ export const pageQuery = graphql`
         website
         image {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 500, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
