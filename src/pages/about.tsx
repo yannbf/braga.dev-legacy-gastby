@@ -56,7 +56,7 @@ const ProfileImage = styled.img`
 
 export const About: React.FC = () => {
   const title = `I'm Yann Braga`;
-  const subtitle = `Frontend Engineer based in Amsterdam, NL.`;
+  const subtitle = `I'm a frontend engineer from Brazil 🇧🇷 living in the land of the windmills 🇳🇱`;
 
   return (
     <Layout title="Yann Braga | About">
@@ -66,9 +66,6 @@ export const About: React.FC = () => {
           <section>
             <ProfileTitle as="h2">{title}</ProfileTitle>
             <Subtitle>{subtitle}</Subtitle>
-            <Description>
-              I&apos;m a software engineer from Brazil 🇧🇷 living in the land of the windmills 🇳🇱.
-            </Description>
             <Description>
               I have been working with development since 2013. Started out as a .NET developer but my passion really
               sparked when I got into frontend. It became even bigger when I found out about open souce.{' '}
