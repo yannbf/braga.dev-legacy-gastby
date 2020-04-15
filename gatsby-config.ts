@@ -145,6 +145,12 @@ export default {
       },
     },
     {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about`, `/projects`],
+      },
+    },
+    {
       resolve: `gatsby-plugin-feed-custom`,
       options: {
         image_url: `${constants.site.url}/social-sharing.png`,
